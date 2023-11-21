@@ -24,7 +24,7 @@ describe('SpinnerComponet specs', () => {
   it('Should be in the DOM while there is a pending promise', () => {
     // Arrange
     jest
-      .spyOn(require('react-promise-tracker'), 'usePromiseTracker')
+      .spyOn(ReactPromiseTracker, 'usePromiseTracker')
       .mockReturnValue({ promiseInProgress: true });
 
     // Act
